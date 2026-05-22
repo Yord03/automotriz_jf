@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios y Oficio - JF AUTOMOTRIZ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+ 
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+  
+        <a class="navbar-brand fw-bold" href="index.html">
+          <img src="Imag/logo.jpg" class="d-block logo-img" alt="imagenlogo" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+            <li class="nav-item"> <a class="nav-link active" href="servicios.html">Servicios</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a> </li>
+          </ul>
+        </div>
+
+        <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#panelLateral" aria-controls="panelLateral">
+          <i class="bi bi-list"></i>  </button>
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="panelLateral" aria-labelledby="panelLateralLabel">
+      <div class="offcanvas-header bg-success text-white">
+        <h5 class="offcanvas-title" id="panelLateralLabel"> <i class="bi bi-sliders"></i> Opciones Adicionales </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" >
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-success btn-lg">
+            <i class="bi bi-person-circle"></i> Mi Perfil
+          </button>
+          <button type="button" class="btn btn-primary btn-lg">
+            <i class="bi bi-gear"></i> Configuración
+          </button>
+          <button type="button" class="btn btn-danger btn-lg">
+            <i class="bi bi-box-arrow-right"></i> Cerrar Sesión
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main class="container my-5">
+        
+        <section class="mb-5">
+            <div class="row align-items-center text-balance">
+                <div class="col-lg-7">
+                    <h2 class="fw-bold mb-3">JF AUTOMOTRIZ</h2>
+                    <p class="lead text-muted fs-6">
+                        Liderado por el Maestro Juan Fernandez Yataco en Coquimbo, es un taller técnico especializado en el arte de la desabolladura, pintura y restauración automotriz. Con un enfoque 100% artesanal y un compromiso absoluto con el "Servicio de Calidad", este taller se dedica a devolverle la vida y la estética original a cada vehículo. Aquí no hay reparaciones al lote; hay un trabajo minucioso hecho a mano, pieza por pieza, cuidando cada detalle para que los vecinos de la región recuperen el orgullo por sus autos.
+                    </p>
+                    
+                    <h4 class="h6 fw-bold mt-4 mb-2 text-uppercase text-secondary">Nuestros Puntos Virtuosos</h4>
+                    <ul class="list-group list-group-flush mb-4 mb-lg-0">
+                        <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i> Transparencia y Honestidad</li>
+                        <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i> Compromiso con la Calidad</li>
+                        <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i> Soluciones Prácticas y Justas</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-5 mt-4 mt-lg-0">
+                    <div class="p-4 rounded shadow-sm border-start border-4 border-warning bg-body-tertiary">
+                        <h3 class="h5 fw-bold mb-3"><i class="bi bi-telephone-fill text-warning me-2"></i>¿Cómo cotizar tu trabajo?</h3>
+                        <p class="small text-muted mb-3"> Para darte un valor real y justo, preferimos el trato directo y en persona. El proceso es muy sencillo: </p>
+                    <ol class="small text-muted ps-3 mb-4">
+                        <li class="mb-2"><strong>Llama al Maestro Juan:</strong> Contáctalo directamente por teléfono para coordinar tu visita.</li>
+                        <li class="mb-2"><strong>Revisión en el taller:</strong> Trae tu vehículo al taller para evaluar el daño, las piezas y los detalles a mano.</li>
+                        <li><strong>Presupuesto formal:</strong> Tras la revisión técnica, nos pondremos en contacto contigo para enviarte el presupuesto detallada.</li>
+                    </ol>
+                    <div class="d-grid gap-2 d-sm-flex">
+                        <a class="btn btn-success d-inline-flex align-items-center gap-2 fw-bold px-4" href="https://wa.me/56995415732" target="_blank">
+                        <i class="bi bi-chat-left-text"></i> WhatsApp
+                        </a>
+                        
+                        <a class="btn btn-outline-secondary d-inline-flex align-items-center gap-2" <a href="https://www.google.com/maps?q=Calle+La+Fragua+1281+Barrio+Industrial+de+Coquimbo+Coquimbo+Chile+1801733" class="text-decoration-none" target="_blank">
+                            <i class="bi bi-geo-alt"></i> Ver Ubicación 
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 bg-body-tertiary">
+                    <div class="card-body p-4">
+                        <div class="mb-3 text-primary"><i class="bi bi-shield-fill-check fs-2"></i></div>
+                        <h5 class="card-title fw-bold">Desabolladura y Pintura</h5>
+                        <p class="card-text text-muted small">Reparación de golpes, choques, abolladuras y raspaduras en la carrocería. Aplicación de pintura con igualación de color precisa y acabados brillantes y uniformes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 bg-body-tertiary">
+                    <div class="card-body p-4">
+                        <div class="mb-3 text-primary"><i class="bi bi-magic fs-2"></i></div>
+                        <h5 class="card-title fw-bold">Restauración de Autos</h5>
+                        <p class="card-text text-muted small">Revivir vehículos antiguos, desgastados por el tiempo o abandonados. Trabajo integral en la renovación de la estructura metálica, tratamiento contra el óxido y renovación estética total.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 bg-body-tertiary">
+                    <div class="card-body p-4">
+                        <div class="mb-3 text-primary"><i class="bi bi-tools fs-2"></i></div>
+                        <h5 class="card-title fw-bold">Recuperación de Piezas</h5>
+                        <p class="card-text text-muted small">Reparación detallada de componentes de la carrocería (tapabarros, parachoques, capós o molduras) que otros talleres darían por perdidos o exigirían cambiar por completo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="bg-dark text-white pt-4 pb-2">
+      <div class="container border-bottom border-secondary pb-3 mb-3">
+        <div class="row align-items-start g-3">
+          <div class="col-md-6 text-start">
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><strong>ENLACES</strong></li>
+              <li><a href="servicios.html" class="text-white-50 text-decoration-none">Servicios</a></li>
+              <li><a href="sobre-nosotros.html" class="text-white-50 text-decoration-none">Sobre Nosotros</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><strong>CONTACTO</strong></li>
+              <li class="small text-white-50">Email: <a href="mailto:jfernandezyataco@gmail.com" class="text-white text-decoration-none">jfernandezyataco@gmail.com</a></li>
+              <li class="small text-white-50">Tel: <a href="tel:+56995415732" class="text-white text-decoration-none">+56 9 9541 5732</a></li>
+              <li class="small text-white-50">Dirección: <a href="https://www.google.com/maps?q=Calle+La+Fragua+1281+Barrio+Industrial+de+Coquimbo+Coquimbo+Chile+1801733" class="text-white text-decoration-none" target="_blank">Calle La Fragua 1281, Barrio Industrial de Coquimbo, Coquimbo, Chile 1801733</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center small text-white-50">
+        <p class="mb-1">© 2026 JF AUTOMOTRIZ. Todos los derechos reservados.</p>
+        <p class="mb-0">Para dudas y consultas, contacta con <a href="soporte.html" class="text-decoration-underline text-white fw-bold">Soporte</a>.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

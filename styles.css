@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Footer styles */
+.site-footer {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: #e9ecef;
+}
+.site-footer a { color: inherit; transition: color .15s ease; }
+.site-footer a:hover { color: #ffc107; text-decoration: underline; }
+.site-footer p { margin-bottom: 0.25rem; }
+.footer-support { margin-top: 6px; font-weight: 500; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 0.35rem; padding-bottom: 0.35rem; font-size: 0.85rem; background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.04)); }
+.footer-bottom ul { padding-left: 0; margin-bottom: 0; }
+.footer-bottom ul li { margin-bottom: 6px; color: #dee2e6; }
+
+@media (max-width: 767px) {
+    .site-footer .text-md-end { text-align: left !important; }
+    .site-footer { font-size: 0.85rem; }
+    .footer-bottom { text-align: left; }
+}
+
+/* Compact footer overrides to reduce visual height */
+footer.py-4, footer.bg-dark {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+}
+.footer-bottom {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+}
+.footer-bottom ul li { margin-bottom: 4px; }
+.footer-support { margin-top: 4px; font-size: 0.9rem; }
+.container.text-center p { margin-bottom: 0; }
+
+/* If some Bootstrap utility classes add extra space, force smaller sizes here */
+.py-4 { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
+.py-3 { padding-top: 0.35rem !important; padding-bottom: 0.35rem !important; }
+
+/* Map container styles */
+.map-container { position: relative; overflow: hidden; border-radius: 6px; box-shadow: 0 1px 6px rgba(0,0,0,0.12); }
+.map-container iframe { width: 100%; height: 280px; border: 0; display: block; }
+.map-overlay { position: absolute; inset: 0; display: block; background: transparent; }
+
+@media (max-width: 767px) {
+    .map-container iframe { height: 200px; }
+}
+
+/* Logo reducido en la barra de navegación */
+.navbar-brand img.logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    display: inline-block;
+}
