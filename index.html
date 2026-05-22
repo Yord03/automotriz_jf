@@ -14,23 +14,24 @@
   <body>
 
      <!-- NAVBAR con 5 opciones principales -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-                 <!-- Logo/Marca -->
-                 <a class="navbar-brand fw-bold" href="index.html">
-                     <img src="Imag/logo.jpg" class="d-block logo-img" alt="imagenlogo" />
-                 </a>
-            
-            <!-- Menú principal sin collapse para móviles -->
-            <div class="navbar-nav ms-auto d-flex align-items-center gap-2">
-                <a class="nav-link" href="servicios.html">Servicios</a>
-                <a class="nav-link" href="quienes_somos.html">Sobre Nosotros</a>
-            </div>
-
-        <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#panelLateral" aria-controls="panelLateral">
-          <i class="bi bi-list"></i>  </button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="index.html">
+      <img src="Imag/logo.jpg" class="d-block logo-img" alt="imagenlogo" />
+    </a>
+    
+    <div class="d-flex align-items-center ms-auto">
+      <div class="navbar-nav flex-row gap-3 me-2">
+        <a class="nav-link px-2" href="servicios.html">Servicios</a>
+        <a class="nav-link px-2" href="quienes_somos.html">Sobre Nosotros</a>
       </div>
-    </nav>
+
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#panelLateral" aria-controls="panelLateral">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </div>
+</nav>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="panelLateral" aria-labelledby="panelLateralLabel">
       <div class="offcanvas-header bg-success text-white">
