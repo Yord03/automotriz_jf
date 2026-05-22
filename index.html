@@ -13,25 +13,19 @@
  
   <body>
 
+     <!-- NAVBAR con 5 opciones principales -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div class="container-fluid">
-  
-        <a class="navbar-brand fw-bold" href="index.html">
-          <img src="Imag/logo.jpg" class="d-block logo-img" alt="imagenlogo" />
-        </a>
-
-        <!-- Botón de menú (hamburguesa) para móviles -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"> <a class="nav-link active" href="index.html">Inicio</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="servicios.html">Servicios</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="quienes_somos.html">Sobre Nosotros</a> </li>
-          </ul>
-        </div>
+        <div class="container-fluid">
+                 <!-- Logo/Marca -->
+                 <a class="navbar-brand fw-bold" href="index.html">
+                     <img src="Imag/logo.jpg" class="d-block logo-img" alt="imagenlogo" />
+                 </a>
+            
+            <!-- Menú principal sin collapse para móviles -->
+            <div class="navbar-nav ms-auto d-flex align-items-center gap-2">
+                <a class="nav-link" href="#servicios">Servicios</a>
+                <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+            </div>
 
         <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#panelLateral" aria-controls="panelLateral">
           <i class="bi bi-list"></i>  </button>
