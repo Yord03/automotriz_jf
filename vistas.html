@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base de Página - JF AUTOMOTRIZ</title>
+    <title>Proyectos JF AUTOMOTRIZ</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
@@ -13,95 +13,433 @@
  
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div class="container-fluid">
-  
-        <a class="navbar-brand fw-bold" href="index.html">
-          <img src="Imag/logo.jpg" class="d-block logo-img" alt="imagenlogo" />
-        </a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="index.html">
+      <img src="Imag/logo.jpg" class="d-block logo-img" alt="imagenlogo" />
+    </a>
+    
+    <div class="d-flex align-items-center ms-auto">
+            <div class="navbar-nav flex-row gap-3 me-2">
+                <a class="nav-link px-2" href="servicios.html">Servicios</a>
+                <a class="nav-link px-2" href="quienes_somos.html">Sobre Nosotros</a>
+                <a class="nav-link px-2" href="ayuda.html">Ayuda</a>
+                <a class="nav-link px-2" href="vistas.html">Vistas</a>
+            </div>
 
-        <!-- Botón de menú (hamburguesa) para móviles -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"> <a class="nav-link active" href="index.html">Inicio</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="servicios.html">Servicios</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a> </li>
-          </ul>
-        </div>
-
-        <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#panelLateral" aria-controls="panelLateral">
-          <i class="bi bi-list"></i>  </button>
-      </div>
-    </nav>
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="panelLateral" aria-labelledby="panelLateralLabel">
-      <div class="offcanvas-header bg-success text-white">
-        <h5 class="offcanvas-title" id="panelLateralLabel"> <i class="bi bi-sliders"></i> Opciones Adicionales </h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" >
-        </button>
-      </div>
-      <div class="offcanvas-body">
-        <!-- Botones en el panel -->
-        <div class="d-grid gap-2">
-          <button type="button" class="btn btn-success btn-lg">
-            <i class="bi bi-person-circle"></i> Mi Perfil
-          </button>
-          <button type="button" class="btn btn-primary btn-lg">
-            <i class="bi bi-gear"></i> Configuración
-          </button>
-          <button type="button" class="btn btn-danger btn-lg">
-            <i class="bi bi-box-arrow-right"></i> Cerrar Sesión
-          </button>
-        </div>
-      </div>
+            <a class="btn btn-success ms-2" href="https://wa.me/56995415732" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> WhatsApp</a>
     </div>
+  </div>
+</nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="bg-dark text-white py-4">
-      <div class="footer-bottom bg-dark text-white py-3">
-        <div class="container">
-          <div class="row align-items-start">
-            <div class="col-md-6 text-start mb-3 mb-md-0">
-              <ul class="list-unstyled mb-0">
-                <li><strong>ENLACES</strong></li>
-                <li><a href="#servicios" class="text-white">Servicios</a></li>
-                <li><a href="#sobre-nosotros" class="text-white">Sobre Nosotros</a></li>
-              </ul>
+<main class="flex-grow-1">
+        <!-- SECCIÓN HERO -->
+        <section class="hero-section bg-gradient text-dark py-5" style="background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold"><i class="bi bi-tools"></i> Taller Mecánico & Automotriz</h1>
+                        <p class="lead">Transformamos tu vehículo dañado en una obra maestra. Con más de 15 años de experiencia, somos especialistas en reparación y mantenimiento.</p>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-danger btn-lg"><i class="bi bi-telephone"></i> Contactar</button>
+                            <button class="btn btn-outline-dark btn-lg"><i class="bi bi-info-circle"></i> Más Info</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://placehold.co/500x400/555555/FFFFFF?text=Taller+Mecanico" alt="Taller" class="img-fluid rounded shadow">
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 text-md-end">
-              <ul class="list-unstyled mb-0">
-                <li><strong>CONTACTO</strong></li>
-                <li>Email: <a href="jfernandezyataco@gmail.com" class="text-white">jfernandezyataco@gmail.com</a></li>
-                <li>Tel: <a href="tel:+56 9 9541 5732" class="text-white">+56 9 9541 5732</a></li>
-                <li>Dirección: Calle La Fragua 1281 Barrio Industrial de Coquimbo, Coquimbo, Chile 1801733</li>
-              </ul>
+        </section>
+
+  
+        <section id="sobre-nosotros" class="about-section py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="display-5 fw-bold text-center mb-4">
+                            Acerca de Nuestro Taller
+                        </h2>
+                        <p class="lead text-center mb-4">
+                            En nuestro taller, nos dedicamos a restaurar y reparar vehículos con la máxima calidad.
+                            Cada auto que llega a nuestras manos recibe el tratamiento especial que merece.
+                        </p>
+                        <p class="fs-5 mb-3">
+                            <strong>Misión:</strong> CARGANDO...
+                        </p>
+                        <p class="fs-5 mb-3">
+                            <strong>Visión:</strong> CARGANDO...
+                        </p>
+                        <p class="fs-5 mb-3">
+                            <strong>Lo que nos hace especiales:</strong> CARGANDO...
+                        </p>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- SECCIÓN SERVICIOS -->
+        <section id="servicios" class="services-section py-5">
+            <div class="container">
+                <h2 class="display-5 fw-bold text-center mb-5">Nuestros Servicios</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card card h-100 border-0 shadow-sm hover-shadow text-center">
+                            <div class="card-body">
+                                <i class="bi bi-tools fs-1 text-danger mb-3 d-block"></i>
+                                <h5 class="card-title">Reparación General</h5>
+                                <p class="card-text">Reparación de motor, transmisión, frenos, suspensión y sistemas eléctricos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card card h-100 border-0 shadow-sm hover-shadow text-center">
+                            <div class="card-body">
+                                <i class="bi bi-tools fs-1 text-danger mb-3 d-block"></i>
+                                <h5 class="card-title">Desabolladuras</h5>
+                                <p class="card-text">Eliminación profesional de abolladuras y restauración de la carrocería.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card card h-100 border-0 shadow-sm hover-shadow text-center">
+                            <div class="card-body">
+                                <i class="bi bi-paint-bucket fs-1 text-primary mb-3 d-block"></i>
+                                <h5 class="card-title">Pintura y Recubrimiento</h5>
+                                <p class="card-text">Pintura profesional, pulido y acabados de alta calidad para tu vehículo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card card h-100 border-0 shadow-sm hover-shadow text-center">
+                            <div class="card-body">
+                                <i class="bi bi-shield-check fs-1 text-warning mb-3 d-block"></i>
+                                <h5 class="card-title">Restauración Completa</h5>
+                                <p class="card-text">Restauración integral de vehículos antiguos y dañados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN POR QUÉ ELEGIRNOS -->
+        <section class="why-us-section py-5 bg-light">
+            <div class="container">
+                <h2 class="display-5 fw-bold text-center mb-5">¿Por Qué Elegirnos?</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="why-item d-flex gap-3">
+                            <div class="flex-shrink-0">
+                                <div class="feature-icon bg-danger text-white rounded-circle p-3" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="bi bi-award fs-5"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Técnicos </h5>
+                                <p>Nuestro equipo cuenta con buenos técnicos y amplia experiencia en la industria automotriz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="why-item d-flex gap-3">
+                            <div class="flex-shrink-0">
+                                <div class="feature-icon bg-danger text-white rounded-circle p-3" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="bi bi-gear-fill fs-5"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Equipos </h5>
+                                <p>Utilizamos herramientas y maquinaria para garantizar resultados de primera calidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="why-item d-flex gap-3">
+                            <div class="flex-shrink-0">
+                                <div class="feature-icon bg-danger text-white rounded-circle p-3" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="bi bi-percent fs-5"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Precios Competitivos</h5>
+                                <p>Ofrecemos excelente relación calidad-precio sin comprometer la excelencia en nuestros trabajos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="why-item d-flex gap-3">
+                            <div class="flex-shrink-0">
+                                <div class="feature-icon bg-danger text-white rounded-circle p-3" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="bi bi-shield-exclamation fs-5"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Garantía en Todos los Trabajos</h5>
+                                <p>Respaldamos cada reparación con garantía, dando tranquilidad a nuestros clientes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA ANTES Y DESPUÉS -->
+        <section class="gallery-section py-5">
+            <div class="container">
+                <h2 class="display-5 fw-bold text-center mb-5">Galería: Antes y Después</h2>
+                
+                <!-- CASO 1 -->
+                <div class="comparison-row mb-5">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                            <div class="comparison-item">
+                                <div class="badge bg-danger position-absolute top-0 start-0 m-3">ANTES</div>
+                                <img src="https://placehold.co/500x350/800000/FFFFFF?text=Auto+Danado+1" alt="Antes" class="img-fluid rounded shadow">
+                                <h5 class="mt-3 fw-bold">Vehículo con Daño Total</h5>
+                                <p class="text-muted">Auto que llegó completamente destrozado. Múltiples abolladuras, deformación de estructura y pintura dañada.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="comparison-item">
+                                <div class="badge bg-success position-absolute top-0 start-0 m-3">DESPUÉS</div>
+                                <img src="https://placehold.co/500x350/008000/FFFFFF?text=Auto+Restaurado+1" alt="Después" class="img-fluid rounded shadow">
+                                <h5 class="mt-3 fw-bold">Restauración Completa</h5>
+                                <p class="text-muted">Resultado final: vehículo completamente restaurado, pintura nueva, estructura corregida. Como nuevo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CASO 2 -->
+                <div class="comparison-row mb-5">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                            <div class="comparison-item">
+                                <div class="badge bg-danger position-absolute top-0 start-0 m-3">ANTES</div>
+                                <img src="https://placehold.co/500x350/660000/FFFFFF?text=Choque+Lateral" alt="Antes" class="img-fluid rounded shadow">
+                                <h5 class="mt-3 fw-bold">Daño por Choque Lateral</h5>
+                                <p class="text-muted">Vehículo con daño lateral severo. Panel abollado, vidrios rotos y pintura comprometida.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="comparison-item">
+                                <div class="badge bg-success position-absolute top-0 start-0 m-3">DESPUÉS</div>
+                                <img src="https://placehold.co/500x350/004400/FFFFFF?text=Reparado+Lateral" alt="Después" class="img-fluid rounded shadow">
+                                <h5 class="mt-3 fw-bold">Reparación Profesional</h5>
+                                <p class="text-muted">Panel reparado, pintura restaurada, vidrios reemplazados. Quedó impecable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CASO 3 -->
+                <div class="comparison-row mb-5">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                            <div class="comparison-item">
+                                <div class="badge bg-danger position-absolute top-0 start-0 m-3">ANTES</div>
+                                <img src="https://placehold.co/500x350/553300/FFFFFF?text=Accidente+Frontal" alt="Antes" class="img-fluid rounded shadow">
+                                <h5 class="mt-3 fw-bold">Accidente Frontal</h5>
+                                <p class="text-muted">Frente completamente destrozado. Capó abollado, parachoques roto, faro dañado.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="comparison-item">
+                                <div class="badge bg-success position-absolute top-0 start-0 m-3">DESPUÉS</div>
+                                <img src="https://placehold.co/500x350/004455/FFFFFF?text=Frente+Restaurado" alt="Después" class="img-fluid rounded shadow">
+                                <h5 class="mt-3 fw-bold">Restauración del Frente</h5>
+                                <p class="text-muted">Frente completamente reconstruido, pintura uniforme, componentes nuevos. Perfecto estado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CASO 4 -->
+                <div class="comparison-row mb-5">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                            <div class="comparison-item">
+                                <div class="badge bg-danger position-absolute top-0 start-0 m-3">ANTES</div>
+                                <img src="https://placehold.co/500x350/331100/FFFFFF?text=Oxido+y+Corrosion" alt="Antes" class="img-fluid rounded shadow">
+                                <h5 class="mt-3 fw-bold">Óxido y Corrosión</h5>
+                                <p class="text-muted">Vehículo antiguo con óxido generalizado, pintura oxidada y decoloración severa.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="comparison-item">
+                                <div class="badge bg-success position-absolute top-0 start-0 m-3">DESPUÉS</div>
+                                <img src="https://placehold.co/500x350/001144/FFFFFF?text=Clasico+Renovado" alt="Después" class="img-fluid rounded shadow">
+                                <h5 class="mt-3 fw-bold">Clásico Renovado</h5>
+                                <p class="text-muted">Restauración completa. Óxido eliminado, pintura nueva de calidad. Brilla como nuevo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CASO 5 -->
+                <div class="comparison-row">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                            <div class="comparison-item">
+                                <div class="badge bg-danger position-absolute top-0 start-0 m-3">ANTES</div>
+                                <img src="https://placehold.co/500x350/440033/FFFFFF?text=Techo+Aplastado" alt="Antes" class="img-fluid rounded shadow">
+                                <h5 class="mt-3 fw-bold">Daño Estructural Grave</h5>
+                                <p class="text-muted">Techo y estructura comprometida. Requirió trabajos especializados de enderezado.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="comparison-item">
+                                <div class="badge bg-success position-absolute top-0 start-0 m-3">DESPUÉS</div>
+                                <img src="https://placehold.co/500x350/003344/FFFFFF?text=Estructura+Corregida" alt="Después" class="img-fluid rounded shadow">
+                                <h5 class="mt-3 fw-bold">Estructura Corregida</h5>
+                                <p class="text-muted">Techo y estructura restaurada con precisión. Alineación perfecta, pintura homogénea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE ESTADÍSTICAS -->
+        <section class="stats-section py-5 bg-dark text-white">
+            <div class="container">
+                <h2 class="display-5 fw-bold text-center mb-5">Nuestros Logros</h2>
+                <div class="row g-4 text-center">
+                    <div class="col-md-3">
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-danger">500+</h3>
+                            <p class="fs-5">Vehículos Reparados</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-success">15+</h3>
+                            <p class="fs-5">Años de Experiencia</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-primary">98%</h3>
+                            <p class="fs-5">Clientes Satisfechos</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-warning">24/7</h3>
+                            <p class="fs-5">Servicio de Emergencia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN TESTIMONIOS -->
+        <section class="testimonials-section py-5">
+            <div class="container">
+                <h2 class="display-5 fw-bold text-center mb-5">Lo que Dicen Nuestros Clientes</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="testimonial-card card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <div class="stars mb-2">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">"Excelente trabajo, mi auto quedó como nuevo. Muy profesionales y atentos. ¡Recomendado!"</p>
+                                <p class="fw-bold mb-0">- Juan Pérez</p>
+                                <p class="text-muted small">Cliente verificado</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <div class="stars mb-2">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">"Rapidez y eficiencia. El equipo realmente sabe lo que hace. Precio justo. Volveré seguro."</p>
+                                <p class="fw-bold mb-0">- María García</p>
+                                <p class="text-muted small">Cliente verificado</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <div class="stars mb-2">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">"Mi vehículo sufrió un accidente grave, ustedes lo dejaron perfecto. Muy satisfecho."</p>
+                                <p class="fw-bold mb-0">- Carlos López</p>
+                                <p class="text-muted small">Cliente verificado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="cta-section py-5 bg-danger text-white">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold mb-3">¿Tu Auto Necesita Reparación?</h2>
+                <p class="lead mb-4">Contáctanos hoy para una evaluación sin compromiso y presupuesto detallado.</p>
+                <div class="d-flex gap-2 justify-content-center flex-wrap">
+                    <a class="btn btn-light btn-lg fw-bold" href="https://wa.me/56995415732" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> Comunícate por WhatsApp</a>
+                    <a class="btn btn-outline-light btn-lg fw-bold" href="https://www.google.com/maps/search/?api=1&query=Lafragua+1281+JF+AUTOMOTRIZ" target="_blank" rel="noopener noreferrer"><i class="bi bi-geo-alt"></i> Ver Ubicación</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <footer class="bg-dark text-white pt-4 pb-2">
+      <div class="container border-bottom border-secondary pb-3 mb-3">
+        <div class="row align-items-start g-3">
+          <div class="col-md-6 text-start">
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><strong>ENLACES</strong></li>
+              <li><a href="servicios.html" class="text-white-50 text-decoration-none">Servicios</a></li>
+              <li><a href="sobre-nosotros.html" class="text-white-50 text-decoration-none">Sobre Nosotros</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><strong>CONTACTO</strong></li>
+              <li class="small text-white-50">Email: <a href="mailto:jfernandezyataco@gmail.com" class="text-white text-decoration-none">jfernandezyataco@gmail.com</a></li>
+              <li class="small text-white-50">Tel: <a href="tel:+56995415732" class="text-white text-decoration-none">(+56) 9 9541 5732</a></li>
+              <li class="small text-white-50">Dirección: <a href="https://www.google.com/maps/search/?api=1&query=Lafragua+1281+JF+AUTOMOTRIZ" class="text-white text-decoration-none" target="_blank">Lafragua 1281, JF AUTOMOTRIZ</a></li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <div class="container text-center">
-        <p class="mb-0">© 2026 Tu Sitio Web. Todos los derechos reservados.</p>
-        <p class="mb-0 footer-support">Para dudas y consultas, contacta con <a href="soporte.html" class="text-decoration-underline text-white fw-bold">Soporte</a>.</p>
+      <div class="container text-center small text-white-50">
+        <p class="mb-1">© 2026 JF AUTOMOTRIZ. Todos los derechos reservados.</p>
+        <p class="mb-0">Para dudas y consultas, contacta con <a href="soporte.html" class="text-decoration-underline text-white fw-bold">Soporte</a>.</p>
       </div>
     </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   </body>
 </html>
