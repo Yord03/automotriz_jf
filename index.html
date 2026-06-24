@@ -19,27 +19,32 @@
     <a class="navbar-brand fw-bold" href="index.html">
       <img src="Imag/logo.jpg" class="d-block logo-img" alt="imagenlogo" />
     </a>
-    
-    <div class="d-flex align-items-center ms-auto">
-      <div class="navbar-nav flex-row gap-3 me-2">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav ms-auto align-items-lg-center">
         <a class="nav-link px-2" href="servicios.html">Servicios</a>
         <a class="nav-link px-2" href="quienes_somos.html">Sobre Nosotros</a>
         <a class="nav-link px-2" href="ayuda.html">Ayuda</a>
         <a class="nav-link px-2" href="vistas.html">Vistas</a>
+        <a class="btn btn-success ms-lg-3 mt-2 mt-lg-0 d-inline-flex align-items-center justify-content-center" href="https://wa.me/56995415732" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> WhatsApp</a>
       </div>
-
-      <a class="btn btn-success ms-2" href="https://wa.me/56995415732" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> WhatsApp</a>
     </div>
   </div>
 </nav>
 
 
-    <header class="bg-dark text-white py-5">
+    <header class="bg-dark text-white py-5" style="background-color: #000;">
       <div class="container text-center">
-        <h1 class="display-5 fw-bold">Bienvenido a JF AUTOMOTRIZ</h1>
-        <p class="lead"> Puedes ver las principales funciones de nuestra empresa. </p>
+        <div class="py-5 px-3 rounded-4 mb-4" style="background-color: #000;">
+          <h1 class="display-5 fw-bold">Bienvenido a JF AUTOMOTRIZ</h1>
+          <p class="lead mb-0"> Puedes ver las principales funciones de nuestra empresa. </p>
+        </div>
 
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleAutoplaying" class="carousel slide mt-4" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="Imag/imagen1.jpeg" class="d-block w-100" alt="imagen1"/>
@@ -71,26 +76,50 @@
 
 
     <!-- SECCIÓN HORARIOS -->
-    <section id="horarios" class="container my-5">
+    <section id="horarios" class="container my-5 py-4 rounded-4" style="background-color: #000;">
       <h3 class="mb-4">Horario de Atención</h3>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-8">
           <div class="card bg-dark border-light">
             <div class="card-body">
-              <h5 class="card-title mb-3"><i class="bi bi-clock-fill"></i> Horarios</h5>
-              <p class="mb-2"><strong>Lunes a Viernes:</strong> 9:00 AM - 6:00 PM</p>
-              <p class="mb-2"><strong>Sábado:</strong> 9:00 AM - 2:00 PM</p>
-              <p class="mb-0"><strong>Domingo:</strong> Cerrado</p>
+              <h5 class="card-title mb-3"><i class="bi bi-clock-fill"></i> Horarios de Atención</h5>
+              <p class="mb-3">Atendemos a nuestros clientes con turnos agendados y visitas directas. Te recomendamos reservar tu hora para recibir una atención rápida y personalizada.</p>
+              <ul class="ps-3 mb-3" style="list-style-type: disc;">
+                <li class="mb-2"><strong>Lunes a Viernes:</strong> 9:00 AM - 6:00 PM</li>
+                <li class="mb-2"><strong>Sábado:</strong> 9:00 AM - 2:00 PM</li>
+                <li><strong>Domingo:</strong> Cerrado</li>
+              </ul>
+              <p class="mb-0">Si necesitas una revisión urgente o una cotización de pintura, traenos tu vehículo dentro de horario y nuestro equipo lo atenderá con la máxima rapidez.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card bg-dark border-light">
-            <div class="card-body">
-              <h5 class="card-title mb-3"><i class="bi bi-telephone-fill"></i> Contacto Rápido</h5>
-              <p class="mb-2"><strong>Tel:</strong> <a href="tel:+56995415732" class="text-white text-decoration-none">(+56) 9 9541 5732</a></p>
-              <p class="mb-0"><strong>Email:</strong> <a href="mailto:jfernandezyataco@gmail.com" class="text-white text-decoration-none">jfernandezyataco@gmail.com</a></p>
-            </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PREPÁRATE ANTES DE VENIR -->
+    <section id="preparacion" class="container my-4 py-4 rounded-4" style="background-color: #232323;">
+      <div class="p-4 rounded-4 mb-4" style="background-color: #1f1f1f;">
+        <h3 class="mb-3">Antes de tu visita</h3>
+        <p class="mb-0">Para aprovechar mejor tu tiempo y agilizar tu atención, te recomendamos traer lo siguiente al taller:</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="p-4 rounded-3" style="background-color: #1f1f1f;">
+            <h5 class="h6">Documento del vehículo</h5>
+            <p class="mb-0">Cédula o permiso de circulación para agilizar comprobantes.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 rounded-3" style="background-color: #1f1f1f;">
+            <h5 class="h6">Fotos del daño</h5>
+            <p class="mb-0">Imágenes del problema ayudan a evaluar mejor el trabajo.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 rounded-3" style="background-color: #1f1f1f;">
+            <h5 class="h6">Llaves de repuesto</h5>
+            <p class="mb-0">Si tu auto queda en el taller, tener repuesto acelera la entrega.</p>
           </div>
         </div>
       </div>
